@@ -2261,12 +2261,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@libsql/client@npm:^0.15.2":
+  version: 0.15.2
+  resolution: "@libsql/client@npm:0.15.2"
+  dependencies:
+    "@libsql/core": "npm:^0.15.2"
+    "@libsql/hrana-client": "npm:^0.7.0"
+    js-base64: "npm:^3.7.5"
+    libsql: "npm:^0.5.4"
+    promise-limit: "npm:^2.7.0"
+  checksum: 10c0/f598d0409a8b5fb2ae56d361f740761fa85d2de863bb0b9e0b6e404331388d4801c22a41f662ba77dced054c0a7d55b425a8f4d7470b17ee5e7f93a18af1009b
+  languageName: node
+  linkType: hard
+
 "@libsql/core@npm:^0.14.0":
   version: 0.14.0
   resolution: "@libsql/core@npm:0.14.0"
   dependencies:
     js-base64: "npm:^3.7.5"
   checksum: 10c0/327bb991cf191d5a9a9fc0cc1a17123f7ca88f222187a3bde845fbad8ceaeaa1f139882080e4b2969da57b83e576c52702572e2838d1743c6bff75f95e6f774a
+  languageName: node
+  linkType: hard
+
+"@libsql/core@npm:^0.15.2":
+  version: 0.15.2
+  resolution: "@libsql/core@npm:0.15.2"
+  dependencies:
+    js-base64: "npm:^3.7.5"
+  checksum: 10c0/90705d96e3b4a88d99a974c8918598005ee003bb73dfd9d08cecdee188c0b432539b9063001b149c9e36c581dbb1487905aea109414b65cf39eaa8f60440bfb3
   languageName: node
   linkType: hard
 
@@ -2277,9 +2299,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@libsql/darwin-arm64@npm:0.5.4":
+  version: 0.5.4
+  resolution: "@libsql/darwin-arm64@npm:0.5.4"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@libsql/darwin-x64@npm:0.4.7":
   version: 0.4.7
   resolution: "@libsql/darwin-x64@npm:0.4.7"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@libsql/darwin-x64@npm:0.5.4":
+  version: 0.5.4
+  resolution: "@libsql/darwin-x64@npm:0.5.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -2320,9 +2356,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@libsql/linux-arm64-gnu@npm:0.5.4":
+  version: 0.5.4
+  resolution: "@libsql/linux-arm64-gnu@npm:0.5.4"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@libsql/linux-arm64-musl@npm:0.4.7":
   version: 0.4.7
   resolution: "@libsql/linux-arm64-musl@npm:0.4.7"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@libsql/linux-arm64-musl@npm:0.5.4":
+  version: 0.5.4
+  resolution: "@libsql/linux-arm64-musl@npm:0.5.4"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
@@ -2334,6 +2384,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@libsql/linux-x64-gnu@npm:0.5.4":
+  version: 0.5.4
+  resolution: "@libsql/linux-x64-gnu@npm:0.5.4"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@libsql/linux-x64-musl@npm:0.4.7":
   version: 0.4.7
   resolution: "@libsql/linux-x64-musl@npm:0.4.7"
@@ -2341,9 +2398,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@libsql/linux-x64-musl@npm:0.5.4":
+  version: 0.5.4
+  resolution: "@libsql/linux-x64-musl@npm:0.5.4"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@libsql/win32-x64-msvc@npm:0.4.7":
   version: 0.4.7
   resolution: "@libsql/win32-x64-msvc@npm:0.4.7"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@libsql/win32-x64-msvc@npm:0.5.4, @libsql/win32-x64-msvc@npm:^0.5.4":
+  version: 0.5.4
+  resolution: "@libsql/win32-x64-msvc@npm:0.5.4"
+  checksum: 10c0/7f988f730a96d58319b212e7ce5e9222c5291803c319e92c2da289b38c95fbf2915221641fb0c67330219d731b68bd542fde3b6a30be8b6b97952ae99ac44b80
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -3226,6 +3298,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/domexception@npm:^4":
+  version: 4.0.3
+  resolution: "@types/domexception@npm:4.0.3"
+  dependencies:
+    "@types/webidl-conversions": "npm:*"
+  checksum: 10c0/c1cec580ca4a3163117a6527c68ebcb5b82862ca1e4f999cf3355098152962ccda3a45a7b63dec3b2ab60ba3506e57c1af60a7db0e3b616b7a5dc9c843e0b33b
+  languageName: node
+  linkType: hard
+
 "@types/estree-jsx@npm:^1.0.0":
   version: 1.0.5
   resolution: "@types/estree-jsx@npm:1.0.5"
@@ -3415,21 +3496,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^16.11.26":
+  version: 16.18.126
+  resolution: "@types/node@npm:16.18.126"
+  checksum: 10c0/5c137eb141d33de32b16ff26047ff6d449432b58d0d25f7cced2040c97727d81fe1099a7581eb336d14a6840f5b09e363bdd43d7a6995e8e81eb47aa51e413fc
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^18.11.18, @types/node@npm:^18.19.9":
   version: 18.19.80
   resolution: "@types/node@npm:18.19.80"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 10c0/6a272d17b3057096ed49cc2780b9739b6f91ffb7f555926a2dc2bf59577b9ee2cf71832003927aa6db21939dca9eb9654a6cd55504fe957c0330b19ce628c8b7
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^20.9.0":
-  version: 20.17.24
-  resolution: "@types/node@npm:20.17.24"
-  dependencies:
-    undici-types: "npm:~6.19.2"
-  checksum: 10c0/2a39ce4c4cd4588a05b2a485cc0a1407cbea608dd1ab03e36add59d61712718d95c84b492ca5190753f0be2bce748aeeb0f2a1412e712775462befe3820b3ff9
   languageName: node
   linkType: hard
 
@@ -3546,6 +3625,13 @@ __metadata:
   version: 1.10.11
   resolution: "@types/verror@npm:1.10.11"
   checksum: 10c0/6d815cb2b76501f976cf9fa0feaf572e83b2ec3043eff92507c9976e52b7844453bd47c84f1298bf583f8e6568f39063a2541f80656f4af8e179072a711f9ab5
+  languageName: node
+  linkType: hard
+
+"@types/webidl-conversions@npm:*":
+  version: 7.0.3
+  resolution: "@types/webidl-conversions@npm:7.0.3"
+  checksum: 10c0/ac2ccff93b95ac7c8ca73dc6064403181691bba7ea144296f462dc9108a07be16cbad7b9c704b3df706dcc5a117e1f7bf7fb27aeb75b09c0f3148de8aee11aff
   languageName: node
   linkType: hard
 
@@ -3771,12 +3857,15 @@ __metadata:
     "@hello-pangea/dnd": "npm:^16.6.0"
     "@kangfenmao/keyv-storage": "npm:^0.1.0"
     "@langchain/community": "npm:^0.3.36"
+    "@libsql/client": "npm:^0.15.2"
+    "@libsql/win32-x64-msvc": "npm:^0.5.4"
     "@modelcontextprotocol/sdk": "npm:^1.8.0"
     "@notionhq/client": "npm:^2.2.15"
     "@reduxjs/toolkit": "npm:^2.2.5"
     "@tavily/core": "patch:@tavily/core@npm%3A0.3.1#~/.yarn/patches/@tavily-core-npm-0.3.1-fe69bf2bea.patch"
     "@tryfabric/martian": "npm:^1.2.4"
     "@types/adm-zip": "npm:^0"
+    "@types/domexception": "npm:^4"
     "@types/fs-extra": "npm:^11"
     "@types/lodash": "npm:^4.17.5"
     "@types/markdown-it": "npm:^14"
@@ -3794,14 +3883,16 @@ __metadata:
     applescript: "npm:^1.0.0"
     axios: "npm:^1.7.3"
     babel-plugin-styled-components: "npm:^2.1.4"
+    blob-polyfill: "npm:^9.0.20240710"
     browser-image-compression: "npm:^2.0.2"
     dayjs: "npm:^1.11.11"
     dexie: "npm:^4.0.8"
     dexie-react-hooks: "npm:^1.1.7"
     docx: "npm:^9.0.2"
+    domexception: "npm:^4.0.0"
     dotenv-cli: "npm:^7.4.2"
-    electron: "npm:31.7.6"
-    electron-builder: "npm:^24.13.3"
+    electron: "npm:22.3.23"
+    electron-builder: "npm:^24.9.1"
     electron-devtools-installer: "npm:^3.2.0"
     electron-icon-builder: "npm:^2.0.1"
     electron-log: "npm:^5.1.5"
@@ -3822,10 +3913,12 @@ __metadata:
     html-to-image: "npm:^1.11.13"
     husky: "npm:^9.1.7"
     i18next: "npm:^23.11.5"
+    libsql: "npm:^0.5.4"
     lint-staged: "npm:^15.5.0"
     lodash: "npm:^4.17.21"
     markdown-it: "npm:^14.1.0"
     mime: "npm:^4.0.4"
+    node-fetch: "npm:2"
     npx-scope-finder: "npm:^1.2.0"
     officeparser: "npm:^4.1.1"
     openai: "patch:openai@npm%3A4.77.3#~/.yarn/patches/openai-npm-4.77.3-59c6d42e7a.patch"
@@ -3862,6 +3955,7 @@ __metadata:
     undici: "npm:^7.4.0"
     uuid: "npm:^10.0.0"
     vite: "npm:^5.0.12"
+    web-streams-polyfill: "npm:^4.1.0"
     webdav: "npm:^5.8.0"
     zipread: "npm:^1.3.3"
   languageName: unknown
@@ -4470,6 +4564,13 @@ __metadata:
     inherits: "npm:^2.0.4"
     readable-stream: "npm:^3.4.0"
   checksum: 10c0/02847e1d2cb089c9dc6958add42e3cdeaf07d13f575973963335ac0fdece563a50ac770ac4c8fa06492d2dd276f6cc3b7f08c7cd9c7a7ad0f8d388b2a28def5f
+  languageName: node
+  linkType: hard
+
+"blob-polyfill@npm:^9.0.20240710":
+  version: 9.0.20240710
+  resolution: "blob-polyfill@npm:9.0.20240710"
+  checksum: 10c0/eb28a475aa43c62bb855ec5404e3382772d1778852b827d6f21a73e499e3eafb3a4f81e9add68f87df336bc23db857ac357767fbb2b4a373f23dc9da872bcfda
   languageName: node
   linkType: hard
 
@@ -6004,6 +6105,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"domexception@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "domexception@npm:4.0.0"
+  dependencies:
+    webidl-conversions: "npm:^7.0.0"
+  checksum: 10c0/774277cd9d4df033f852196e3c0077a34dbd15a96baa4d166e0e47138a80f4c0bdf0d94e4703e6ff5883cec56bb821a6fff84402d8a498e31de7c87eb932a294
+  languageName: node
+  linkType: hard
+
 "domhandler@npm:^5.0.2, domhandler@npm:^5.0.3":
   version: 5.0.3
   resolution: "domhandler@npm:5.0.3"
@@ -6139,7 +6249,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-builder@npm:^24.13.3":
+"electron-builder@npm:^24.9.1":
   version: 24.13.3
   resolution: "electron-builder@npm:24.13.3"
   dependencies:
@@ -6273,16 +6383,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:31.7.6":
-  version: 31.7.6
-  resolution: "electron@npm:31.7.6"
+"electron@npm:22.3.23":
+  version: 22.3.23
+  resolution: "electron@npm:22.3.23"
   dependencies:
     "@electron/get": "npm:^2.0.0"
-    "@types/node": "npm:^20.9.0"
+    "@types/node": "npm:^16.11.26"
     extract-zip: "npm:^2.0.1"
   bin:
     electron: cli.js
-  checksum: 10c0/4b7ee31894eb3606d6a6047cd7af22d3b82331dacb96869c483bfd32ffc8581ef638ccfa027938d83d5242e7bf8b7856cad29a09fb80942a25ef3de0c888fb48
+  checksum: 10c0/d00872382a38469ae8e1013719aaff228bec94b5975c346885a476d849239f11f94bad2eb70c48945a2c1fcbc16b298d35e861c4385918930ffef6d1797e7d4e
   languageName: node
   linkType: hard
 
@@ -9613,6 +9723,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"libsql@npm:^0.5.4":
+  version: 0.5.4
+  resolution: "libsql@npm:0.5.4"
+  dependencies:
+    "@libsql/darwin-arm64": "npm:0.5.4"
+    "@libsql/darwin-x64": "npm:0.5.4"
+    "@libsql/linux-arm64-gnu": "npm:0.5.4"
+    "@libsql/linux-arm64-musl": "npm:0.5.4"
+    "@libsql/linux-x64-gnu": "npm:0.5.4"
+    "@libsql/linux-x64-musl": "npm:0.5.4"
+    "@libsql/win32-x64-msvc": "npm:0.5.4"
+    "@neon-rs/load": "npm:^0.0.4"
+    detect-libc: "npm:2.0.2"
+  dependenciesMeta:
+    "@libsql/darwin-arm64":
+      optional: true
+    "@libsql/darwin-x64":
+      optional: true
+    "@libsql/linux-arm64-gnu":
+      optional: true
+    "@libsql/linux-arm64-musl":
+      optional: true
+    "@libsql/linux-x64-gnu":
+      optional: true
+    "@libsql/linux-x64-musl":
+      optional: true
+    "@libsql/win32-x64-msvc":
+      optional: true
+  checksum: 10c0/8998ac5aecea5c999f80c04c3240f35f403a524d08c0f7aaa073f40608d11e1727a202b33ec0dcac6c7b1002adb0d7ea1d43c884953be58d15773ce2b4552661
+  conditions: (os=darwin | os=linux | os=win32) & (cpu=x64 | cpu=arm64 | cpu=wasm32)
+  languageName: node
+  linkType: hard
+
 "lie@npm:~3.3.0":
   version: 3.3.0
   resolution: "lie@npm:3.3.0"
@@ -11354,7 +11497,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.7, node-fetch@npm:^2.6.9":
+"node-fetch@npm:2, node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.7, node-fetch@npm:^2.6.9":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -15450,13 +15593,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.19.2":
-  version: 6.19.8
-  resolution: "undici-types@npm:6.19.8"
-  checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
-  languageName: node
-  linkType: hard
-
 "undici-types@npm:~6.20.0":
   version: 6.20.0
   resolution: "undici-types@npm:6.20.0"
@@ -15973,6 +16109,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"web-streams-polyfill@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "web-streams-polyfill@npm:4.1.0"
+  checksum: 10c0/1022a7d13f0994002c1fa65f53576d85ea76ec59f8ffb3413f052dfcc0ca656bbcbe2611a35180b14f9bca6f3fe83802028b641ec9d200362797c99fa3e68e4e
+  languageName: node
+  linkType: hard
+
 "webdav@npm:^5.8.0":
   version: 5.8.0
   resolution: "webdav@npm:5.8.0"
@@ -15999,6 +16142,13 @@ __metadata:
   version: 3.0.1
   resolution: "webidl-conversions@npm:3.0.1"
   checksum: 10c0/5612d5f3e54760a797052eb4927f0ddc01383550f542ccd33d5238cfd65aeed392a45ad38364970d0a0f4fea32e1f4d231b3d8dac4a3bdd385e5cf802ae097db
+  languageName: node
+  linkType: hard
+
+"webidl-conversions@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "webidl-conversions@npm:7.0.0"
+  checksum: 10c0/228d8cb6d270c23b0720cb2d95c579202db3aaf8f633b4e9dd94ec2000a04e7e6e43b76a94509cdb30479bd00ae253ab2371a2da9f81446cc313f89a4213a2c4
   languageName: node
   linkType: hard
 

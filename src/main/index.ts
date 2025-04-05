@@ -3,6 +3,29 @@ import { replaceDevtoolsFont } from '@main/utils/windowUtil'
 import { app, ipcMain } from 'electron'
 import installExtension, { REDUX_DEVTOOLS } from 'electron-devtools-installer'
 
+
+const { Blob } = require("blob-polyfill");
+
+// 全局注入 Blob
+if (!globalThis.Blob) {
+    globalThis.Blob = Blob;
+}
+
+
+const { ReadableStream } = require("web-streams-polyfill/polyfill");
+
+// 全局注入 ReadableStream
+if (!globalThis.ReadableStream) {
+    globalThis.ReadableStream = ReadableStream;
+}
+
+const DOMException = require("domexception");
+
+// 全局注入 DOMException
+if (!globalThis.DOMException) {
+    globalThis.DOMException = DOMException;
+}
+
 import { registerIpc } from './ipc'
 import { configManager } from './services/ConfigManager'
 import { CHERRY_STUDIO_PROTOCOL, handleProtocolUrl, registerProtocolClient } from './services/ProtocolClient'

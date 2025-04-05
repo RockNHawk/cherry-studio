@@ -9,12 +9,14 @@ import { setMinappShow } from '@renderer/store/runtime'
 import { MinAppType } from '@renderer/types'
 import { delay } from '@renderer/utils'
 import { Avatar, Drawer } from 'antd'
-import { WebviewTag } from 'electron'
+// import { WebviewTag } from 'electron'
+declare type WebviewTag = any;
 import { useEffect, useRef, useState } from 'react'
 import BeatLoader from 'react-spinners/BeatLoader'
 import styled from 'styled-components'
 
 import { TopView } from '../TopView'
+
 
 interface Props {
   app: MinAppType
