@@ -21,6 +21,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import { SettingContainer, SettingDivider, SettingGroup, SettingRow, SettingTitle } from '.'
+import { APP_IS_CUSTOM_PRODUCT } from '../../../../shared/app-meta'
 
 const AboutSettings: FC = () => {
   const [version, setVersion] = useState('')
@@ -194,14 +195,18 @@ const AboutSettings: FC = () => {
           </Button>
         </SettingRow>
         <SettingDivider />
-        <SettingRow>
-          <SettingRowTitle>
-            <FileProtectOutlined />
-            {t('settings.about.license.title')}
-          </SettingRowTitle>
-          <Button onClick={showLicense}>{t('settings.about.license.button')}</Button>
-        </SettingRow>
-        <SettingDivider />
+        {!APP_IS_CUSTOM_PRODUCT && (
+          <>
+            <SettingRow>
+              <SettingRowTitle>
+                <FileProtectOutlined />
+                {t('settings.about.license.title')}
+              </SettingRowTitle>
+              <Button onClick={showLicense}>{t('settings.about.license.button')}</Button>
+            </SettingRow>
+            <SettingDivider />
+          </>
+        )}
         <SettingRow>
           <SettingRowTitle>
             <MailOutlined /> {t('settings.about.contact.title')}

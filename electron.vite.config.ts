@@ -45,6 +45,9 @@ export default defineConfig({
     plugins: [externalizeDepsPlugin()]
   },
   renderer: {
+    define: {
+      'process.env.CUSTOM_APP_NAME': JSON.stringify(process.env.CUSTOM_APP_NAME || '超高压智脑from cfg')
+    },
     plugins: [
       react({
         babel: {

@@ -66,6 +66,8 @@ export class WindowService {
       }
     })
 
+    this.mainWindow.webContents?.openDevTools()
+
     this.setupMainWindow(this.mainWindow, mainWindowState)
 
     return this.mainWindow
