@@ -10,6 +10,7 @@ import icon from '../../../build/icon.png?asset'
 import { titleBarOverlayDark, titleBarOverlayLight } from '../config'
 import { locales } from '../utils/locales'
 import { configManager } from './ConfigManager'
+import { APP_NAME } from "../../shared/app-meta";
 
 export class WindowService {
   private static instance: WindowService | null = null
@@ -66,8 +67,6 @@ export class WindowService {
       }
     })
 
-    this.mainWindow.webContents?.openDevTools()
-
     this.setupMainWindow(this.mainWindow, mainWindowState)
 
     return this.mainWindow
@@ -89,7 +88,7 @@ export class WindowService {
       width,
       height,
       autoHideMenuBar: true,
-      title: 'Cherry Studio',
+      title: APP_NAME || 'Cherry Studio',
       ...windowOptions,
       parent,
       webPreferences: {

@@ -96,6 +96,7 @@ const AboutSettings: FC = () => {
     })
   }, [])
 
+  const ignoreUpdate = APP_IS_CUSTOM_PRODUCT
   return (
     <SettingContainer theme={theme}>
       <SettingGroup theme={theme}>
@@ -134,24 +135,28 @@ const AboutSettings: FC = () => {
               </Tag>
             </VersionWrapper>
           </Row>
-          <CheckUpdateButton
-            onClick={onCheckUpdate}
-            loading={update.checking}
-            disabled={update.downloading || update.checking}>
-            {update.downloading
-              ? t('settings.about.downloading')
-              : update.available
-                ? t('settings.about.checkUpdate.available')
-                : t('settings.about.checkUpdate')}
-          </CheckUpdateButton>
+          {!ignoreUpdate && (
+            <CheckUpdateButton
+              onClick={onCheckUpdate}
+              loading={update.checking}
+              disabled={update.downloading || update.checking}>
+              {update.downloading
+                ? t('settings.about.downloading')
+                : update.available
+                  ? t('settings.about.checkUpdate.available')
+                  : t('settings.about.checkUpdate')}
+            </CheckUpdateButton>
+          )}
         </AboutHeader>
         <SettingDivider />
-        <SettingRow>
-          <SettingRowTitle>{t('settings.general.auto_check_update.title')}</SettingRowTitle>
-          <Switch value={autoCheckUpdate} onChange={(v) => dispatch(setAutoCheckUpdate(v))} />
-        </SettingRow>
+        {!ignoreUpdate && (
+          <SettingRow>
+            <SettingRowTitle>{t('settings.general.auto_check_update.title')}</SettingRowTitle>
+            <Switch value={autoCheckUpdate} onChange={(v) => dispatch(setAutoCheckUpdate(v))} />
+          </SettingRow>
+        )}
       </SettingGroup>
-      {hasNewVersion && update.info && (
+      {!ignoreUpdate && hasNewVersion && update.info && (
         <SettingGroup theme={theme}>
           <SettingRow>
             <SettingRowTitle>

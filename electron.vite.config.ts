@@ -46,7 +46,8 @@ export default defineConfig({
   },
   renderer: {
     define: {
-      'process.env.CUSTOM_APP_NAME': JSON.stringify(process.env.CUSTOM_APP_NAME || '超高压智脑from cfg')
+      // 使用方法 (Windows CMD): set CUSTOM_APP_NAME=AppName && yarn run dev
+      'process.env.CUSTOM_APP_NAME': JSON.stringify(process.env.CUSTOM_APP_NAME)
     },
     plugins: [
       react({
