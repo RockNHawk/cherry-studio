@@ -22,5 +22,12 @@ export default function fix() {
     globalThis.DOMException = require('domexception')
   }
 
+  if (!globalThis.crypto) {
+    const { Crypto } = require('@peculiar/webcrypto')
+    console.log('fix window.crypto')
+    globalThis.crypto = new Crypto()
+    console.log('fix window.crypto ok', globalThis['crypto'], globalThis['crypto']?.subtle)
+  }
+
   console.info('polyfill win7 ok')
 }
