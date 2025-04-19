@@ -50,6 +50,10 @@ export default defineConfig({
     }
   },
   renderer: {
+    define: {
+      // 使用方法 (Windows CMD): set CUSTOM_APP_NAME=AppName && yarn run dev
+      'process.env.CUSTOM_APP_NAME': JSON.stringify(process.env.CUSTOM_APP_NAME)
+    },
     plugins: [
       viteReact({
         babel: {

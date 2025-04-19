@@ -96,7 +96,14 @@
     "undici": "^7.4.0",
     "webdav": "^5.8.0",
     "ws": "^8.18.1",
-    "zipread": "^1.3.3"
+    "zipread": "^1.3.3",
+    "libsql": "^0.5.4",
+    "@libsql/client": "^0.15.2",
+    "@libsql/win32-x64-msvc": "^0.5.4",
+    "blob-polyfill": "^9.0.20240710",
+    "domexception": "^4.0.0",
+    "node-fetch": "2",
+    "web-streams-polyfill": "^4.1.0"
   },
   "devDependencies": {
     "@agentic/exa": "^7.3.3",
@@ -206,7 +213,11 @@
     "node-gyp": "^9.1.0",
     "libsql@npm:^0.4.4": "patch:libsql@npm%3A0.4.7#~/.yarn/patches/libsql-npm-0.4.7-444e260fb1.patch",
     "openai@npm:^4.77.0": "patch:openai@npm%3A4.87.3#~/.yarn/patches/openai-npm-4.87.3-2b30a7685f.patch",
-    "pkce-challenge@npm:^4.1.0": "patch:pkce-challenge@npm%3A4.1.0#~/.yarn/patches/pkce-challenge-npm-4.1.0-fbc51695a3.patch"
+    "pkce-challenge@npm:^4.1.0": "patch:pkce-challenge@npm%3A4.1.0#~/.yarn/patches/pkce-challenge-npm-4.1.0-fbc51695a3.patch",
+
+    "@types/domexception": "^4",
+    "electron": "22.3.23",
+    "electron-builder": "^24.9.1"
   },
   "packageManager": "yarn@4.6.0",
   "lint-staged": {
