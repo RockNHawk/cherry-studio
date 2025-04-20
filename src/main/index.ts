@@ -1,5 +1,3 @@
-import polyfill from './polyfill'
-polyfill()
 import { electronApp, optimizer } from '@electron-toolkit/utils'
 import { replaceDevtoolsFont } from '@main/utils/windowUtil'
 import { IpcChannel } from '@shared/IpcChannel'
