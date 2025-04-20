@@ -71,7 +71,6 @@ export class WindowService {
         allowRunningInsecureContent: true
       }
     })
-    this.mainWindow.webContents.openDevTools()
 
     this.setupMainWindow(this.mainWindow, mainWindowState)
 
